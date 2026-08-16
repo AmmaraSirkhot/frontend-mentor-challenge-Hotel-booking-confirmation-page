@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="index.js" defer></script>
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap"
+    rel="stylesheet">
+
+  <title>Frontend Mentor | Hotel booking confirmation page</title>
+
+</head>
+
+<body>
+  <main>
+    <div class="wrapper">
+      <!-- Sidebar starts -->
+      <div class="Sidebar">
+        <div class="mob-header">
+          <div class="nm-logo flx-box">
+            <img class="sun-logo" src="assets\images\illustration-sun.svg" alt="sun-img">
+            <div>
+              <p class="logo-title1">Maison</p>
+              <p class="logo-title2">Soleil</p>
+            </div>
+          </div>
+          <div class="nav-container">
+            <button class="menu-btn" id="menu-toggle-btn" aria-expanded="false" aria-controls="guest-dropdown"><img
+                src="assets\images\icon-menu.svg" alt="menu-btn"></button>
+            <div id="guest-dropdown" class="dropdown-menu">
+              <ul>
+                <li>
+                  <div class="nav-menu stay-menu flx-box">
+                    <img src="assets\images\icon-bed.svg" alt="bed-img">
+                    <div class="stay flx-box">
+                      <p>Your stay</p>
+                      <p class="notification flx-box">1</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="nav-menu flx-box">
+                    <img src="assets\images\icon-house.svg" alt="house-img">
+                    <p>The house</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="nav-menu flx-box">
+                    <img src="assets\images\icon-pin.svg" alt="pin-img">
+                    <p>Around town</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="nav-menu flx-box">
+                    <img src="assets\images\icon-breakfast-outline.svg" alt="Breakfast-img">
+                    <p>Breakfast</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="nav-menu flx-box">
+                    <img src="assets\images\icon-mail.svg" alt="mail-img">
+                    <p>Messages</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="weather-dd flx-box">
+                    <p>TODAY IN CASSIS</p>
+                    <h3>27°</h3>
+                    <p>Sunny · light breeze</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="cust-adress-dd flx-box">
+                    <p>Est. 1987</p>
+                    <p>Maison Soleil · 12 Rue des<br>Oliviers · Cassis</p>
+                    <p>© 2026 Maison Soleil</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Guest navigation -->
+        <div class="guest-nav flx-box">
+          <div class="nav-menu stay-menu flx-box">
+            <img src="assets\images\icon-bed.svg" alt="bed-img">
+            <div class="stay flx-box">
+              <p>Your stay</p>
+              <p class="notification flx-box">1</p>
+            </div>
+          </div>
+
+          <div class="nav-menu flx-box">
+            <img src="assets\images\icon-house.svg" alt="house-img">
+            <p>The house</p>
+          </div>
+
+          <div class="nav-menu flx-box">
+            <img src="assets\images\icon-pin.svg" alt="pin-img">
+            <p>Around town</p>
+          </div>
+
+          <div class="nav-menu flx-box">
+            <img src="assets\images\icon-breakfast-outline.svg" alt="Breakfast-img">
+            <p>Breakfast</p>
+          </div>
+
+          <div class="nav-menu flx-box">
+            <img src="assets\images\icon-mail.svg" alt="mail-img">
+            <p>Messages</p>
+          </div>
+
+        </div>
+
+        <!-- Local weather -->
+        <div class="weather-card flx-box">
+          <p>TODAY IN CASSIS</p>
+          <h3>27°</h3>
+          <p>Sunny · light breeze</p>
+        </div>
+        <!-- adress -->
+        <div class="cust-adress flx-box">
+          <p>Est. 1987</p>
+          <p>Maison Soleil · 12 Rue des<br>Oliviers · Cassis</p>
+          <p>© 2026 Maison Soleil</p>
+        </div>
+      </div>
+
+      <!-- Sidebar ends -->
+
+      <!-- Main content starts -->
+      <div class="main-content">
+        <!-- content-header -->
+        <div class="content-header flx-box">
+          <div class="nm-booking flx-box">
+            <p>Booking · Confirmed</p>
+            <h1>Bienvenue, <span class="nm-span">Lucia.</span></h1>
+          </div>
+          <div class="btns">
+            <button class="btn btn1" type="button">Print receipt</button>
+            <button class="btn btn2" type="button">Add to calendar</button>
+          </div>
+        </div>
+
+        <!-- Booking cards start -->
+        <div class="booking-container flx-box">
+          <div class="booking-cards flx-box">
+            <!-- Receipt card -->
+            <div class="cards Receipt-card  flx-box">
+              <div class="Receipt-card-header  flx-box">
+                <div class="flx-box">
+                  <p>Receipt</p>
+                  <h3>Your stay</h3>
+                </div>
+                <div class="lft-align flx-box">
+                  <p>№ MS-2026</p>
+                  <p>0421-AH</p>
+                </div>
+              </div>
+
+              <div class="stay-dates flx-box">
+                <div class="dates flx-box">
+                  <p class="check">Check in</p>
+                  <h1>25 Apr</h1>
+                  <p>Saturday · 15:00</p>
+                </div>
+                <div class="dates flx-box">
+                  <p class="check">Check out</p>
+                  <h1>29 Apr</h1>
+                  <p>Wednesday · 11:00</p>
+                </div>
+              </div>
+
+              <div class="hotel-services flx-box">
+                <div class="ser1 service flx-box">
+                  <p>Room · La Garrigue · 4 nights</p>
+                  <p class="lft-align">€ 620.00</p>
+                </div>
+                <div class="ser2 service flx-box">
+                  <p>Breakfast · 2 guests</p>
+                  <p class="lft-align">€ 96.00</p>
+                </div>
+                <div class="ser3 service flx-box">
+                  <p>Tourist tax</p>
+                  <p class="lft-align">€ 14.40</p>
+                </div>
+              </div>
+
+              <div class="charges flx-box">
+                <div class="bill total flx-box">
+                  <p>Total paid</p>
+                  <h2 class="lft-align">€ 730.40</h2>
+                </div>
+                <div class="bill paid-with flx-box">
+                  <p>Paid · Wise · GBP</p>
+                  <img class="lft-align" src="assets\images\icon-barcode.svg" alt="barcode-img">
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Note from host card -->
+            <div class="cards hosts-note flx-box">
+              <div class="note-header flx-box">
+                <p>Welcome</p>
+                <img src="assets\images\icon-sun.svg" alt="sun-img">
+              </div>
+              <p class="note-title">A note from your host,</p>
+              <h2 class="note-title">Margaux.</h2>
+              <p class="host-msg">We're so glad you're coming. The shutters will be open, the lemonade cold, and the cat
+                - Poivre -
+                pretending not to notice you.</p>
+              <div class="note-footer flx-box">
+                <p>Room</p>
+                <h3>La Garrigue</h3>
+              </div>
+
+            </div>
+          </div>
+          <div class="card-hover flx-box">
+            <img src="assets\images\icon-sparkle.svg" alt="sparkle-img">
+            <p>hover to fan</p>
+            <img src="assets\images\icon-sparkle.svg" alt="sparkle-img">
+          </div>
+
+        </div>
+        <!-- Booking cards end -->
+
+        <!-- Guest info row starts -->
+        <div class="guest-info">
+          <!-- Arrival -->
+          <div class="arrival-card info  flx-box">
+            <div class="info-header flx-box" id="header1">
+              <div class="info-header-title flx-box">
+                <img class="info-icon" src="assets\images\icon-key.svg" alt="key-img">
+                <p>Arrival</p>
+              </div>
+              <p>01</p>
+            </div>
+            <div class="info-title flx-box">
+              <h3>Check-in from 15:00</h3>
+              <p>Sat, 25 April</p>
+              <p id="info-discription">Ring the brass bell by the blue door. If we're at the market, the key is in the
+                terracotta pot by the
+                olive tree.</p>
+            </div>
+          </div>
+          <!-- Wifi -->
+          <div class="wifi-card info flx-box">
+            <div class="info-header flx-box" id="header2">
+              <div class="info-header-title flx-box">
+                <img class="info-icon" src="assets\images\icon-wifi.svg" alt="key-img">
+                <p>Wifi</p>
+              </div>
+              <p>02</p>
+            </div>
+            <div class="info-title flx-box">
+              <h3>Le Soleil · Guest</h3>
+              <p>Password below</p>
+              <div class="wifi flx-box">
+                <p id="wifi-nm">NETWORK</p>
+                <p>Le Soleil · Guest</p>
+              </div>
+              <div class="wifi flx-box">
+                <p id="wifi-nm">PASSWORD</p>
+                <div class="wifi-pwd flx-box">
+                  <p>soleil-2026</p>
+                  <button class="pwd-copy" type="button">COPY</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <!-- Breakfast -->
+          <div class="breakfast-card info flx-box">
+            <div class="info-header flx-box" id="header3">
+              <div class="info-header-title flx-box">
+                <img class="info-icon" src="assets\images\icon-breakfast.svg" alt="key-img">
+                <p>Breakfast</p>
+              </div>
+              <p>03</p>
+            </div>
+            <div class="info-title flx-box">
+              <h3>Served 8 - 10:30</h3>
+              <p>On the terrace</p>
+              <p id="info-discription">Fresh figs, Marseille honey, pain au levain, and espresso. Gluten-free option?
+                Leave a note the night
+                before.</p>
+            </div>
+
+          </div>
+        </div>
+        <!-- Guest info row ends -->
+      </div>
+      <!-- Main content ends -->
+    </div>
+    </div>
+  </main>
+
+
+
+
+
+
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </footer>
+</body>
+
+</html>
