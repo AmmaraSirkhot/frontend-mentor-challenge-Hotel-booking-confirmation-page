@@ -4,12 +4,15 @@
     padding: 0;
 }
 
-.wrapper {
-    display: grid;
-    grid-template-columns: 1fr 5fr;
+body {   
     font-family: "DM Sans", sans-serif;
     font-size: 14px;
     background-color: hsla(41, 100%, 93%, 0.5);
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
 }
 
 .Sidebar {
