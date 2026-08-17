@@ -14,7 +14,7 @@ This is a solution to the [Hotel booking confirmation page challenge on Frontend
   - [AI Collaboration](#ai-collaboration)
 
 ## Overview
-It was a new experience for me to build this page.I used css flex box and grid for layout. And transition and transform properties for animation.I also used jscript for menu button and copy button function.
+It was a new experience for me to build this page.I used css flex box and grid for layout. And transition and transform properties for animation.I also used jscript for menu button function.
 
 ### The challenge
 
@@ -31,8 +31,8 @@ assets\images\desktop view.png
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: (https://github.com/AmmaraSirkhot/frontend-mentor-challenge-Hotel-booking-confirmation-page)
+- Live Site URL: (https://ammarasirkhot.github.io/frontend-mentor-challenge-Hotel-booking-confirmation-page/)
 
 ### Built with
 
