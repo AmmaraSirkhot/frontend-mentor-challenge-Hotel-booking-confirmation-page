@@ -60,7 +60,7 @@ body {
     font-size: 12px;
     flex-direction: column;
     gap: 1px;
-    margin: 20px 0 190px 0;
+    margin: 20px 0 295px 0;
 }
 
 .nav-menu {
@@ -211,7 +211,7 @@ body {
 }
 
 .btn1 {
-    margin-right: 5px;
+    margin-right: 15px;
     font-weight: 500;
     border: none;
     color: hsl(33, 15%, 15%);
@@ -224,7 +224,7 @@ body {
     cursor: pointer;
     transform: scale(1.1);
     color: hsl(40, 60%, 98%);
-    background-color: hsl(33, 15%, 15%);
+    background-color: hsl(15, 74%, 41%);
 }
 
 .btn2 {
@@ -237,8 +237,7 @@ body {
 .btn2:hover {
     cursor: pointer;
     transform: scale(1.1);
-    color: hsl(33, 15%, 15%);
-    background-color: hsla(41, 100%, 93%, 0.5);
+    background-color: hsl(15, 74%, 41%); 
     box-shadow: 0 0 1px 1px hsla(33, 17%, 41%, 0.2);
 }
 
@@ -257,8 +256,8 @@ body {
 }
 
 .cards {
-    width: 300px;
-    height: 320px;
+    width: 400px;
+    height: 420px;
     border-radius: 10px;
     background-color: white;
     box-shadow: 0 15px 35px hsla(33, 17%, 41%, 0.2);
@@ -287,9 +286,8 @@ body {
 
 .Receipt-card {
     flex-direction: column;
-    gap: 10px;
-    padding: 20px;
-    font-size: 10px;
+    gap: 25px;
+    padding: 25px;
     transform: rotate(-6deg);
     background-color: hsl(40, 60%, 98%);
 }
@@ -302,18 +300,18 @@ body {
 .Receipt-card-header {
     justify-content: space-between;
     width: 100%;
-    font-size: 8px;
+    font-size: 9px;
     font-family: "DM Mono", monospace;
     letter-spacing: 1px;
     text-transform: uppercase;
     color: hsla(33, 22%, 20%, 0.7);
-    padding-bottom: 10px;
+    padding-bottom: 12px;
     border-bottom: 1px dashed hsla(33, 17%, 41%, 0.2);
 }
 
 .Receipt-card-header>div {
     flex-direction: column;
-    gap: 2px;
+    gap: 4px;
 }
 
 .Receipt-card-header h3 {
@@ -333,14 +331,14 @@ body {
     justify-content: center;
     gap: 50px;
     text-align: center;
-    padding-bottom: 13px;
+    padding-bottom: 15px;
     border-bottom: 1px dashed hsla(33, 17%, 41%, 0.2);
 }
 
 .dates,
 .hotel-services {
     flex-direction: column;
-    gap: 5px;
+    gap: 7px;
     color: hsla(33, 22%, 20%, 0.5);
 }
 
@@ -351,15 +349,15 @@ body {
 }
 
 .dates>h1 {
-    font-size: 22px;
+    font-size: 25px;
     font-weight: 400;
     font-family: "Fraunces", serif;
     color: hsl(33, 22%, 20%);
 }
 
 .hotel-services {
-    gap: 8px;
-    padding-bottom: 13px;
+    gap: 9px;
+    padding-bottom: 15px;
     color: hsla(33, 22%, 20%, 0.9);
     border-bottom: 1px solid hsl(33, 17%, 41%);
 }
@@ -387,7 +385,7 @@ body {
 }
 
 .bill>p {
-    font-size: 7px;
+    font-size: 10px;
     font-family: "DM Mono", monospace;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -396,20 +394,19 @@ body {
 
 .total>h2 {
     font-family: "Fraunces", serif;
-    font-size: 17px;
+    font-size: 20px;
     font-weight: 500;
 }
 
 .paid-with>img {
-    width: 70px;
+    width: 80px;
 }
 
 /* hosts-note */
 .hosts-note {
     flex-direction: column;
     gap: 10px;
-    padding: 20px;
-    font-size: 10px;
+    padding: 25px;
     transform: rotate(3deg);
     color: hsl(41, 100%, 93%);
     background: linear-gradient(35deg, hsl(15, 69%, 37%), hsl(15, 74%, 41%), hsl(22, 72%, 56%));
@@ -417,18 +414,19 @@ body {
 }
 
 .note-header {
-    gap: 170px;
+    justify-content: space-between;
+    width: 100%;
     padding-top: 12px;
+    font-size: 10px;
     text-transform: uppercase;
-    font-size: 8px;
     font-family: "DM Mono", monospace;
     letter-spacing: 1px;
     border-top: 1.5px dashed hsla(45, 100%, 74%, 0.2);
 }
 
 .note-header>img {
-    height: 40px;
-    width: 40px;
+    height: 45px;
+    width: 45px;
 }
 
 .note-title {
@@ -437,12 +435,12 @@ body {
 }
 
 p.note-title {
-    font-size: 17px;
+    font-size: 20px;
     color: hsla(45, 100%, 74%, 0.7);
 }
 
 h2.note-title {
-    font-size: 27px;
+    font-size: 37px;
     font-weight: 400;
 }
 
@@ -454,19 +452,19 @@ p.host-msg {
 
 .note-footer {
     flex-direction: column;
-    gap: 5px;
-    margin-top: 50px;
+    gap: 7px;
+    margin-top: 95px;
 }
 
 .note-footer>p {
     text-transform: uppercase;
-    font-size: 8px;
+    font-size: 10px;
     letter-spacing: 0.2px;
     opacity: 0.8;
 }
 
 .note-footer>h3 {
-    font-size: 14px;
+    font-size: 17px;
     font-family: 'Fraunces', serif;
     font-weight: 400;
 }
@@ -625,10 +623,11 @@ p.host-msg {
 .attribution {
     font-size: 0.6875rem;
     text-align: center;
+    color: hsla(33, 22%, 20%, 0.7);
 }
 
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: hsla(33, 22%, 20%, 0.9);
 }
 
 /* small screen transition */
