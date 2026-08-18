@@ -23,3 +23,22 @@ document.addEventListener('click', (e) => {
     toggleBtn.setAttribute('aria-expanded', 'false');
   }
 });
+
+// copy button
+
+  const copyBtn = document.getElementById('copyBtn');
+  const textToCopy = document.getElementById('myParagraph').innerText;
+
+  copyBtn.addEventListener('click', async () => {
+    try {
+      await navigator.clipboard.writeText(textToCopy);
+      copyBtn.textContent = 'Copied!';
+      
+      // Reset button text after 2 seconds
+      setTimeout(() => {
+        copyBtn.textContent = 'Copy';
+      }, 2000);
+    } catch (err) {
+      console.error('Failed to copy text: ', err);
+    }
+  });
